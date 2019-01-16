@@ -1,0 +1,190 @@
+
+.boats{
+  background-image:url("../images/touch.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+
+}
+#match{
+  background-repeat: no-repeat;
+
+}
+/* #stats{
+  text-align: center;
+  color: tomato;
+  font-size: 20px;
+} */
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+button{
+  background:CornflowerBlue;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#002eff;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: CornflowerBlue;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+#match2{
+
+  left:40%;
+  top: -60%;
+  background-repeat: no-repeat;
+  margin-left:35%;
+  margin-right:10%;
+
+
+}
+.miss{
+  background-image: url("../images/cross.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+.water{
+  background-image: url("../images/logo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+.color{
+  background-color:CornflowerBlue;
+}
+.color2{
+  background-color:#002eff;
+}
+#ins{
+  font-family: sans-serif;
+  color: CornflowerBlue;
+  font-weight: bold;
+  text-align: center;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.text {
+  text-align: center;
+  font-family: serif;
+  font-size: 125%;
+}
+body {
+  padding: 2.5%;
+  background-color: #eee;
+}
+form{
+  text-align: center;
+}
+a {
+    background-color:#568fea;
+  box-shadow: 0 5px 0 #3d7ee5;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  width: auto;
+  display: block;
+  text-align: center;
+
+}
+a:hover {
+  background-color: #71a5f7;
+  cursor: pointer;
+}
+
+a:active {
+  box-shadow: none;
+  top: 5px;
+}
+#players{
+  color: #568fea;
+  font-family: serif;
+}
+#wait{
+  color: #3d7ee5;
+  font-family: serif;
+}
+#name{
+  text-align: center;
+}
+#countdowntimer{
+  text-align: right;
+  font-size: 30px;
+  color: tomato;
+}
+#left{
+  text-align: right;
+  font-size: 25px;
+}
+#form{
+ caret-color: #002eff;
+ column-rule-color: red;
+ border-color: CornflowerBlue;
+}
+.l:hover{
+
+  background-color: CornflowerBlue;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 144px;
+}
+@media only screen and (max-width: 600px) {    /*Change the background
+                                                color of the <body> element to "lightblue" when the
+                                                browser window is 600px wide or less:*/
+  body {
+    background-color: lightblue;
+  }
+}
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
+}
