@@ -1,0 +1,73 @@
+> show collections
+orders
+> db.orders.findOne()  
+{
+        "_id" : 1,
+        "customer" : {
+                "_id" : 1,
+                "name" : "Alice"
+        },
+        "date" : ISODate("2018-11-08T10:08:12Z"),
+        "details" : [
+                {
+                        "product_id" : 1,
+                        "product" : "Softshell Windwall Jacket Black",
+                        "supplier" : "North Face",
+                        "product_price" : 115,
+                        "amount" : 1,
+                        "cost" : 115,
+                        "category_tree" : [
+                                "Men's Jackets",
+                                "Men's Clothing",
+                                "Clothing"
+                        ]
+                }
+        ],
+        "total" : 115
+}
+> use ecommerce_tab
+switched to db ecommerce_tab
+> show collections
+category
+customer
+order_details
+orders
+product
+> db.category.findOne()
+{
+        "_id" : ObjectId("5c06556597b10e77bf87edea"),
+        "category_id" : 1,
+        "name" : "Sports & Outdoors",
+        "parent_category" : ""
+}
+> db.customer.findOne()
+{
+        "_id" : ObjectId("5c06555197b10e77bf87ede2"),
+        "customer_id" : 1,
+        "name" : "Alice"
+}
+> db.order_details.findOne()
+{
+        "_id" : ObjectId("5c06551a97b10e77bf87edbb"),
+        "order_id" : 1,
+        "product" : 1,
+        "amount" : 1,
+        "cost" : 115
+}
+> db.orders.findOne()
+{
+        "_id" : ObjectId("5c06550697b10e77bf87edb2"),
+        "order_id" : 1,
+        "customer" : 1,
+        "date" : "2018-11-08 11:08:12+01",
+        "total_cost" : 115
+}
+> db.product.findOne()
+{
+        "_id" : ObjectId("5c06553897b10e77bf87edcc"),
+        "product_id" : 2,
+        "name" : "Asus Zenbook 4",
+        "supplier" : "Asus",
+        "category" : 8,
+        "price" : 1150
+}
