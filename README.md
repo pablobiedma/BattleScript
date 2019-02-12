@@ -1,2 +1,2 @@
 # BattleScript
-I programmed a battleship web application from scratch using javascript, html, css nodejs... 
+I programmed a battle ship web application from scratch using javascript, html, css, and nodejs. 
